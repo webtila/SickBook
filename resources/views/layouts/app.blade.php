@@ -23,6 +23,8 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
+               
+               <img src="{{asset('img/nphlogo.jpg')}}"style="height:25px; width:25px;" class="" alt="">
                 <a class="navbar-brand text-primary" href="{{ url('/') }}">
                    NPH Record Department
                 </a>
@@ -39,7 +41,7 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
-                      <a href="/" class="nav-link">Home</a>
+                      <a href="/" class="nav-link "><img src="{{asset('img/home.svg')}}"  style="height: 30px;"alt=""></a>
                       <a href="/inservice" class="nav-link">InserviceRecords</a>
                       <a href="/infamily" class="nav-link">InfamilyRecords</a>
                       <a href="/exservice" class="nav-link">ExserviceRecords</a>

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <div class="  container-fluid  text-center mx-auto pt-1 col-sm-5">
+    <div class="  container-fluid  text-center mx-auto pt-1 col-sm-8">
         <!-- <div class="pt-5">
 
             <div class="pt-5 block container-fluid m-auto text-center"style="width:600px;">
@@ -11,9 +11,24 @@
 
         </div> -->
 
-        <h1 class=" text-primary bg-white"> Nepal Police Hospital</h1>
-        <h2 class="pt-2 text-dark"> Sick Book Record</h2>      
+       <div>
+        <div></div>
+           <a href="https://www.nepalpolice.gov.np">
+              <img src="{{asset('img/policelogo.png')}}" class="" style="height:100px; width:100px;" alt="">   
+           </a>
+          <span class="text-primary display-4"> Nepal Police Hospital</span>
+           <a href="https://www.nph.nepalpolice.gov.np">
+              <img src="{{asset('img/nphlogo.jpg')}}" class="" style="height:80px; width:80px;" alt="">
+           </a>
+               <h3 class="text-dark"> Sick Book Record</h3>      
+            
+       </div>
         <hr>  
+        <div class="col-md-12 ">
+          @include('layouts.search')
+              
+        </div>
+        <hr>
         <div>
             <a href="/inservice" 
                 class="btn btn-primary  btn-vlg "data-toggle="tooltip" 

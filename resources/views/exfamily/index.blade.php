@@ -62,8 +62,8 @@
                     <td>{{$exfamilyrecord->pension}}</td>
                     <td>{{$exfamilyrecord->book_expiry}}</td>
                     @if(isset(Auth::user()->id)&&Auth::user()->id==$exfamilyrecord->user_id)
-                    <td><a 
-                        href="/exfamily/{{$exfamilyrecord->id}}/edit" class="btn btn-warning">
+                    <td  style="display:flex"><a 
+                        href="/exfamily/{{$exfamilyrecord->id}}/edit" class="btn btn-warning mr-2">
                         EDIT
                         </a>
                         <span>

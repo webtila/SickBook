@@ -24,6 +24,7 @@ Route::resource('/inservice',InserviceRecordsController::class);
 Route::resource('/infamily',InfamilyRecordsController::class);
 Route::resource('/exservice',ExServiceRecordsController::class);
 Route::resource('/exfamily',ExFamilyRecordsController::class);
+Route::get('/search','SearchRecordsController@search')->name('search');
 Auth::routes();
 
 

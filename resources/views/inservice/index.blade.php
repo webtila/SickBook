@@ -22,7 +22,9 @@
             <a href="/inservice/create" class=" mb-5 rounded-pill btn btn-primary">
                 Add Record
             </a>
+            <a href="#" class="mb-5 rounded-pill btn btn-success">Bulk Import</a>
         </div>
+        
     @endif    
    
         <div class="container-fluid row">
@@ -60,8 +62,8 @@
                     <td>{{$inservicerecord->approved_in}}</td>
                     <td>{{$inservicerecord->updated_at}}</td>
                     @if(isset(Auth::user()->id)&&Auth::user()->id==$inservicerecord->user_id)
-                    <td><a 
-                        href="/inservice/{{$inservicerecord->id}}/edit" class="btn btn-warning">
+                    <td style="display:flex"><a 
+                        href="/inservice/{{$inservicerecord->id}}/edit" class="btn btn-warning mr-2">
                         EDIT
                         </a>
                         <span>

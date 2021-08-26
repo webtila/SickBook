@@ -58,8 +58,8 @@
                     <td>{{$exservicerecord->approved_in}}</td>
                     <td>{{$exservicerecord->book_expiry}}</td>
                     @if(isset(Auth::user()->id)&&Auth::user()->id==$exservicerecord->user_id)
-                    <td><a 
-                        href="/exservice/{{$exservicerecord->id}}/edit" class="btn btn-warning">
+                    <td  style="display:flex"><a 
+                        href="/exservice/{{$exservicerecord->id}}/edit" class="btn btn-warning mr-2">
                         EDIT
                         </a>
                         <span>

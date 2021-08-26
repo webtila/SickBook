@@ -66,8 +66,8 @@
                     <td>{{$infamilyrecord->approved_in}}</td>
                     <td>{{$infamilyrecord->updated_at}}</td>
                     @if(isset(Auth::user()->id)&&Auth::user()->id==$infamilyrecord->user_id)
-                    <td><a 
-                        href="/infamily/{{$infamilyrecord->id}}/edit" class="btn btn-warning">
+                    <td style="display:flex"><a 
+                        href="/infamily/{{$infamilyrecord->id}}/edit" class="btn btn-warning mr-2">
                         EDIT
                         </a>
                         <span>
