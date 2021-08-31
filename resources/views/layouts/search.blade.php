@@ -1,8 +1,8 @@
-<form action="/search"
+<form action="{{route('search')}}"
   method="GET"
   enctype="multipart/form-data"
   class="col-sm-12">
-  @csrf
+
   <div class="container col-md-12">
       <div class="row d-flex justify-content-center">
           <div class="col-md-12">

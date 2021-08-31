@@ -6,6 +6,7 @@ use App\Http\Controllers\InserviceRecordsController;
 use App\Http\Controllers\InfamilyRecordsController;
 use App\Http\Controllers\ExServiceRecordsController;
 use App\Http\Controllers\ExFamilyRecordsController;
+use App\Http\Controllers\SearchRecordsController;
 
 
 /*
@@ -24,7 +25,7 @@ Route::resource('/inservice',InserviceRecordsController::class);
 Route::resource('/infamily',InfamilyRecordsController::class);
 Route::resource('/exservice',ExServiceRecordsController::class);
 Route::resource('/exfamily',ExFamilyRecordsController::class);
-Route::get('/search','SearchRecordsController@search')->name('search');
+Route::get('/search',[SearchRecordsController::class,'search'])->name('search');
 Auth::routes();
 
 
